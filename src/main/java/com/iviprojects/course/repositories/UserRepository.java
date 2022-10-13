@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.iviprojects.course.entities.User;
 
-public interface UserRepository extends JpaRepository<User, Long>{
+//Opcional a anottation do @Repository pois ele já herda de JPARepository [!]
+public interface UserRepository extends JpaRepository <User, Long> {
 	
 }
