@@ -16,6 +16,10 @@ import com.iviprojects.course.services.CategoryService;
 @RequestMapping(value = "/category")
 public class CategoryResource {
 	
+	//ResourcesLayers is utilized for requests in application
+	// and build the web project in a site;
+	// NEED a injection dependency with ServiceLayer
+	
 	@Autowired 
 	private CategoryService categoryService;
 	
