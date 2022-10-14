@@ -13,16 +13,16 @@ import com.iviprojects.course.repositories.UserRepository;
 public class UserService {
 	
 	@Autowired
-	private UserRepository repository;
+	private UserRepository userRepository;
 	
 	
 	public List <User> findAll() {
-		return repository.findAll();
+		return userRepository.findAll();
 	}
 	
 	
 	public User findById(Long id) {
-		Optional <User> user = repository.findById(id);
+		Optional <User> user = userRepository.findById(id);
 		return user.get();
 	}
 }
