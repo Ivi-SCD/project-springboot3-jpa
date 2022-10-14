@@ -13,7 +13,7 @@ import com.iviprojects.course.entities.Category;
 import com.iviprojects.course.services.CategoryService;
 
 @RestController
-@RequestMapping(value = "/category")
+@RequestMapping(value = "/categories")
 public class CategoryResource {
 	
 	//ResourcesLayers is utilized for requests in application
